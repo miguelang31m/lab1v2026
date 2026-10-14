@@ -1,0 +1,49 @@
+LAB 2 - CAMBIOS REALIZADOS SOBRE LAB 1
+======================================
+
+1. pom.xml
+   - JaCoCo 0.8.13.
+   - H2 runtime para perfil cloud-demo.
+   - propiedades SonarCloud/cobertura.
+
+2. GitHub Actions
+   - .github/workflows/build.yml
+   - push: main y feature/lab2-cicd
+   - pull_request: main
+   - tests + JaCoCo
+   - SonarCloud (con secrets)
+   - Snyk (con secret)
+   - build JAR
+   - Docker build / Docker Hub opcional
+   - deploy a Render por Deploy Hook
+
+3. Backend
+   - /api/system/health
+   - /api/system/version
+   - configuración por variables de entorno
+   - perfil cloud con H2 para demo rápida
+   - CORS configurable
+
+4. Tests
+   - CustomerServiceTest
+   - TransactionServiceTest
+   - SystemControllerTest
+
+5. Docker
+   - Dockerfile multietapa
+   - .dockerignore
+
+6. Frontend
+   - VITE_API_URL configurable
+   - .env.example
+
+7. Documentación
+   - LAB2_PASO_A_PASO.md
+   - RENDER_PASO_A_PASO.md
+   - SECRETS_GITHUB.md
+   - INFORME_LAB2_BORRADOR.md
+   - README.md actualizado
+
+8. Utilidades Windows
+   - 3_PROBAR_LAB2.bat
+   - 4_DOCKER_CLOUD_DEMO.bat
