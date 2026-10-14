@@ -1,1 +1,7 @@
 CREATE DATABASE IF NOT EXISTS banco2026;
+
+CREATE USER IF NOT EXISTS 'banco_user'@'localhost'
+IDENTIFIED BY 'banco123';
+
+GRANT ALL PRIVILEGES ON banco2026.* TO 'banco_user'@'localhost';
+FLUSH PRIVILEGES;
